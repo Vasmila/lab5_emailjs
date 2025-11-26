@@ -228,145 +228,113 @@
 
     <button type="button" class="button2" onclick="location.href='https://www.figma.com/design/yj9j1cuLn8rxCWsauYXDWc/%D0%B2%D0%B5%D0%B1-6-%D1%81%D0%B5%D0%BC?node-id=0-1&t=AwpKUJ1cTdPrSDn2-1'">Установить</button>
 
-
-
-  </div>
-
-      <div class="container">
-        <h1>Форма обратной связи</h1>
-        
-        <div id="successMessage" class="message success">
-            Сообщение успешно отправлено!
-        </div>
-        
-        <div id="errorMessage" class="message error">
-            Произошла ошибка при отправке сообщения.
-        </div>
-
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Тема:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <button type="submit" id="submitBtn">Отправить сообщение</button>
-        </form>
-
-        <div id="loading" class="loading">
-            Отправка сообщения...
-        </div>
-    </div>
-
-    <!-- Подключаем EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <script>
-        // Инициализация EmailJS
-        (function() {
-            emailjs.init("1hltZMWWreA6olGPG"); // Замените на ваш публичный ключ
-        })();
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            const submitBtn = document.getElementById('submitBtn');
-            const loading = document.getElementById('loading');
-            const successMessage = document.getElementById('successMessage');
-            const errorMessage = document.getElementById('errorMessage');
-            
-            // Скрываем предыдущие сообщения
-            successMessage.style.display = 'none';
-            errorMessage.style.display = 'none';
-            
-            // Показываем индикатор загрузки
-            submitBtn.disabled = true;
-            loading.style.display = 'block';
-            
-            // Собираем данные формы
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Отправляем email через EmailJS
-            emailjs.send('service_vn2e32q', 'template_tiap88n', formData)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    
-                    // Показываем сообщение об успехе
-                    successMessage.style.display = 'block';
-                    
-                    // Очищаем форму
-                    document.getElementById('contactForm').reset();
-                    
-                    // Прокручиваем к верху страницы
-                    window.scrollTo(0, 0);
-                })
-                .catch(function(error) {
-                    console.log('FAILED...', error);
-                    
-                    // Показываем сообщение об ошибке
-                    errorMessage.style.display = 'block';
-                    
-                    // Прокручиваем к верху страницы
-                    window.scrollTo(0, 0);
-                })
-                .finally(function() {
-                    // Скрываем индикатор загрузки
-                    submitBtn.disabled = false;
-                    loading.style.display = 'none';
-                });
-        });
-    </script>
-
-
-    
   
   </main>
+      </div>
 
+  <div class="container">
+    <h1>Форма обратной связи</h1>
+    
+    <div id="successMessage" class="message success">
+        Сообщение успешно отправлено!
+    </div>
+    
+    <div id="errorMessage" class="message error">
+        Произошла ошибка при отправке сообщения.
+    </div>
 
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
 
-  <header>
-    <div class="container1"><div class="bukvi"><div class="buk">.</div></div></div>
-    <div class="container2"><div class="bukvi"><div class="buk">р</div></div></div>
-    <div class="container3"><div class="bukvi"><div class="buk">я</div></div></div>
-    <div class="container4"><div class="bukvi"><div class="buk">д</div></div></div>
-    <div class="container5"><div class="bukvi"><div class="buk">о</div></div></div>
-    <div class="container6"><div class="bukvi"><div class="buk">м</div></div></div>
-    <div class="container3"><div class="bukvi"><div class="buk">.</div></div></div>
-    <div class="container5"><div class="bukvi"><div class="buk">д</div></div></div>
-    <div class="container2"><div class="bukvi"><div class="buk">е</div></div></div>
-    <div class="container6"><div class="bukvi"><div class="buk">л</div></div></div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-    <div class="container5"><div class="bukvi"><div class="buk">и</div></div></div>
-    <div class="container4"><div class="bukvi"><div class="buk">м</div></div></div>
-    <div class="container6"><div class="bukvi"><div class="buk">с</div></div></div>
-    <div class="container2"><div class="bukvi"><div class="buk">я</div></div></div>
-    <div class="container3"><div class="bukvi"><div class="buk">.</div></div></div>
-    <div class="container1"><div class="bukvi"><div class="buk">р</div></div></div>
-    <div class="container2"><div class="bukvi"><div class="buk">я</div></div></div>
-    <div class="container6"><div class="bukvi"><div class="buk">д</div></div></div>
-    <div class="container1"><div class="bukvi"><div class="buk">о</div></div></div>
-    <div class="container4"><div class="bukvi"><div class="buk">м</div></div></div>
+        <div class="form-group">
+            <label for="subject">Тема:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
 
-  </header>
+        <div class="form-group">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Отправить сообщение</button>
+    </form>
+
+    <div id="loading" class="loading">
+        Отправка сообщения...
+    </div>
+</div>
+
+<!-- Подключаем EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    // Инициализация EmailJS
+    (function() {
+        emailjs.init("1hltZMWWreA6olGPG"); // Замените на ваш публичный ключ
+    })();
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const submitBtn = document.getElementById('submitBtn');
+        const loading = document.getElementById('loading');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        
+        // Скрываем предыдущие сообщения
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
+        
+        // Показываем индикатор загрузки
+        submitBtn.disabled = true;
+        loading.style.display = 'block';
+        
+        // Собираем данные формы
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+        
+        // Отправляем email через EmailJS
+        emailjs.send('service_vn2e32q', 'template_tiap88n', formData)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                
+                // Показываем сообщение об успехе
+                successMessage.style.display = 'block';
+                
+                // Очищаем форму
+                document.getElementById('contactForm').reset();
+                
+                // Прокручиваем к верху страницы
+                window.scrollTo(0, 0);
+            })
+            .catch(function(error) {
+                console.log('FAILED...', error);
+                
+                // Показываем сообщение об ошибке
+                errorMessage.style.display = 'block';
+                
+                // Прокручиваем к верху страницы
+                window.scrollTo(0, 0);
+            })
+            .finally(function() {
+                // Скрываем индикатор загрузки
+                submitBtn.disabled = false;
+                loading.style.display = 'none';
+            });
+    });
+    </script>
 
     
     <script src='other_files/Script_1.js'></script>
