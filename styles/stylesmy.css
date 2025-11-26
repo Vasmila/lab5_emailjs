@@ -1,0 +1,977 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../other_files/BebasNeue-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url('../other_files/AnonymousPro-Regular.ttf') format('opentype');
+}
+
+
+
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* хедер */
+
+header{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.bukvi{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.buk{
+    font:5vw Bebas Neue,sans-serif;;
+    font-weight: 600;
+    color:#6354D7;
+    margin: 0px 0px;
+    transition: 1s;
+}
+
+.container1, .container2,.container3,.container4,.container5,.container6{
+  background-color: #BFCDFF;
+  width: 100%;
+  position: relative;
+  transition: 2s;
+
+}
+.container1, .container2,.container3,.container4,.container5,.container6:after {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}  
+.container1:hover{
+    background-color:#6354D7;
+}
+.container1:hover .buk { 
+    font: 6vw Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.container2:hover{
+    background-color:#E444A2;
+}
+.container2:hover .buk { 
+    font: 6vw Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.container3:hover{
+    background-color:#8F8DFF;
+}
+.container3:hover .buk { 
+    font: 6vw Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.container4:hover{
+    background-color:#B5D8EA;
+}
+.container4:hover .buk { 
+    font: 6vw Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.container5:hover{
+    background-color:#F294CB;
+}
+.container5:hover .buk { 
+    font: 6vw Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.container6:hover{
+    background-color:#459FCF;
+}
+.container6:hover .buk { 
+    font: 6vw Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+
+
+/* Вступайте в наше сообщество */
+.section4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 192px 8.3%;
+}
+
+img.rot {
+    width: 455px;
+    animation: 1s linear 0s normal none infinite running rot;
+    -webkit-animation: 10s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.buttonswe{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+.zagolovok3{
+    margin-top: 16px;
+    margin-left: 135px;
+}
+h6{
+    font:4.17vw Bebas Neue,sans-serif;;
+    /* font:80px Bebas Neue,sans-serif; */
+    font-weight: 600;
+    color:#000000;
+    margin: 0px 0px;
+}
+
+/* Что можно делать */
+.section2{
+    margin: 16px 8.3%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.section21, .section22{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 56px 32px;
+    padding-right: 135px;
+    background-color: #BFCDFF;
+    transition: 1.5s;
+}
+
+.section3{
+    margin: 0px 8.3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    height: 376px;
+}
+.section31, .section32, .section33{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; 
+    padding: 32px;
+    background-color: #BFCDFF;
+    transition: 1.5s;
+}
+.h6{
+    font:80px Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#6354D7;
+    margin: 0px 0px;
+    transition: 1s;
+}
+.h7{  
+    font:24px Anonymous Pro,sans-serif;
+    color: #000;
+    margin: 0px;
+    transition: 1s;
+}
+
+.section21:hover{
+    background-color:#F294CB;
+}
+.section21:hover .h6 { 
+    color:#6354D7;
+}
+.section21:hover .h7 { 
+    color:#ffffff;
+}
+
+.section22:hover{
+    background-color:#459FCF;
+}
+.section22:hover .h6 { 
+    color:#F294CB;
+}
+.section22:hover .h7 { 
+    color:#ffffff;
+}
+
+.section31:hover{
+    background-color:#B5D8EA;
+}
+.section31:hover .h6 { 
+    color:#8F8DFF;
+}
+.section31:hover .h7 { 
+    color:#ffffff;
+}
+
+.section32:hover{
+    background-color:#8F8DFF;
+}
+.section32:hover .h6 { 
+    color:#F294CB;
+}
+.section32:hover .h7 { 
+    color:#ffffff;
+}
+
+.section33:hover{
+    background-color:#E444A2;
+}
+.section33:hover .h6 { 
+    color:#B5D8EA;
+}
+.section33:hover .h7 { 
+    color:#ffffff;
+}
+
+
+/* Сколько объявлений c картинкой */
+.bg1{
+    margin: 136px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg2 {
+    background: url(../img/bgg1.png) center center;
+    background-repeat: no-repeat;
+    width: 658px;
+    height: 439px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    font:176px Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#000000;
+    margin: 0px 0px;
+    transition: 2s;
+}
+h5{  
+    font:40px Anonymous Pro,sans-serif;
+    color: #000;
+    margin: 0px;
+}
+.bg2:hover h4 { 
+    font:228px Bebas Neue,sans-serif;
+    font-weight: 600;
+}
+
+
+/* О нас с цифрами */
+.section1{
+    margin: 0px 8.3%;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+}
+
+.section11, .section12, .section13{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    padding: 56px 0px;
+    background-color: #BFCDFF;
+    transition: 1.5s;
+}
+.section11:hover{
+    background-color: #8F8DFF;
+}
+.section11:hover .h4 { 
+    color:#ffffff;
+}
+.section11:hover .h5 { 
+    color:#ffffff;
+}
+.section12:hover{
+    background-color: #E444A2;
+}
+.section12:hover .h4 { 
+    color:#ffffff;
+}
+.section12:hover .h5 { 
+    color:#ffffff;
+}
+.section13:hover{
+    background-color: #459FCF;
+}
+.section13:hover .h4 { 
+    color:#ffffff;
+}
+.section13:hover .h5 { 
+    color:#ffffff;
+}
+
+.h4{  
+    font:56px Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#000000;
+    margin: 0px 16px;
+    transition: 0.5s;
+}
+.h5{  
+    font:28px Anonymous Pro,sans-serif;
+    color: #000;
+    transition: 0.5s;
+}
+
+/* Бегущая строка */
+.berstr {
+    display: flex;
+    overflow-x: hidden;
+    background-color:#BFCDFF;
+    padding: 8px 0px; 
+}
+.str1 {
+    animation: marquee1 20s infinite linear;
+    animation-delay: -20s;
+    display: flex;
+    flex-direction: row; 
+}
+.str2 {
+    animation: marquee2 20s infinite linear;
+    animation-delay: -10s;
+    display: flex;
+    flex-direction: row;
+}
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+h2{  
+    font:96px Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#6354D7;
+    margin: 0px 8px;
+}
+h3{  
+    font:96px Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+    margin: 0px 8px;
+}
+
+
+
+h1{  
+    font:28px Anonymous Pro,sans-serif;
+    color: #000;
+    margin: 0px;
+}
+p{ 
+    font:28px Anonymous Pro,sans-serif;
+    color: #000;
+}
+
+/* О нас текст */
+.about_text{
+    margin: 192px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_text2{
+    width: 658px;
+    font:28px Anonymous Pro,sans-serif;
+}
+
+/* Навигация */
+.nav2{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+}
+
+.zagolovok1{
+    margin-top: 137px;
+    margin-left: 8.3%;
+}
+.zagolovok2{
+    margin-top: 16px;
+    margin-left: 15.3%;
+}
+
+.nav3{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    top: 781px;
+    right: 15.3%;
+    left: 8.3%;
+    z-index: 1000;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.button1{
+    font:28px Anonymous Pro,sans-serif;
+    font-weight: 500;
+    color:#ffffff;
+    padding: 16px 0px;
+    background-color: #459FCF;
+    border: 1px solid #459FCF;
+    border-radius: 8px;
+    width: 254px;
+    transition: 0.5s;
+}
+button.button1:hover{
+    color:#6354D7;
+    background-color: #B5D8EA;
+    border: 1px solid #B5D8EA;
+}
+button.button1:active{
+    color:#ffffff;
+    background-color: #8F8DFF;
+    border: 1px solid #8F8DFF;
+}
+button.button2{
+    font:28px Anonymous Pro,sans-serif;
+    font-weight: 500;
+    color:#000000;
+    padding: 16px 0px;
+    background-color: #B5D8EA;
+    border: 1px solid #B5D8EA;
+    border-radius: 8px;
+    width: 254px;
+    transition: 0.5s;
+}
+button.button2:hover{
+    color:#6354D7;
+    background-color: #F294CB;
+    border: 1px solid #F294CB;
+}
+button.button2:active{
+    color:#6354D7;
+    background-color: #E444A2;
+    border: 1px solid #E444A2;
+}
+
+nav{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 24px 160px;
+    background-color: #BFCDFF;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 523px;
+}
+.navbar a{
+    font:20px Anonymous Pro,sans-serif;
+    transition: all .50s;
+    border: 1px solid transparent;
+}
+
+.navbar a:hover{
+    color: #E444A2;
+    text-decoration: none;
+}
+.navbar a:active{
+    color: #6354D7;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    font:32px Anonymous Pro,sans-serif;
+    font-weight: 650;
+}
+
+
+/* МЕДИА ЗАПРОСЫ */
+
+@media (max-width: 1440px) {
+    nav{
+        padding: 24px 5.5%;
+    }
+    .navbar{
+        width: 470px;
+    }
+    .zagolovok1{
+        margin-left: 5.5%;
+    }
+    .zagolovok2{
+        margin-left: 13%;
+    }
+    .nav3{
+        /* top: 880px; */
+        right: 13%;
+        left: 5.5%;
+    }
+    .about_text2{
+        width: 632px;
+    }
+    .section1{
+        margin: 0px 5.5%;
+    }
+    .h4{  
+        font:40px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .h5{  
+        font:24px Anonymous Pro,sans-serif;
+    }
+    .bg1{
+        margin: 104px 0px;
+    }
+    .bg2 {
+        background: url(../img/bgg2.png) center center;
+        width: 524px;
+        height: 350px;
+    }
+    h4{
+        font:108px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    h5{  
+        font:32px Anonymous Pro,sans-serif;
+    }
+    .bg2:hover h4 { 
+        font:124px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .section2{
+        margin: 16px 5.5%;
+    }
+    .section21, .section22{
+        padding: 56px 32px;
+        padding-right: 92px;
+    }
+    .section3{
+        margin: 0px 5.5%;
+        gap: 16px;
+        height: 328px;
+    }
+    .section31, .section32, .section33{
+        padding: 32px;
+    }
+    .h6{
+        font:72px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .h7{  
+        font:20px Anonymous Pro,sans-serif;
+    }
+    .section4{
+        margin: 192px 5.5%;
+    }
+    img.rot {
+        width: 365px;
+    }
+    .buttonswe{
+        margin-top: 80px;
+        gap: 16px
+    }
+    .zagolovok3{
+        margin-top: 16px;
+        margin-left: 108px;
+    }
+    h6{
+        font:72px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+  }
+
+
+
+@media (max-width: 1194px) {
+    h1{  
+        font:20px Anonymous Pro,sans-serif;
+    }
+    button.button1, button.button2{
+        font:24px Anonymous Pro,sans-serif;
+        font-weight: 500;
+        width: 193px;
+    }
+    nav{
+        padding: 24px 9.8%;
+    }
+    .navbar{
+        width: 440px;
+    }
+    .logo{
+        font:24px Anonymous Pro,sans-serif;
+        font-weight: 500;
+    }
+    .zagolovok1{
+        margin-top: 128px;
+        margin-left: 9.8%;
+    }
+    .zagolovok2{
+        margin-left: 16.6%;
+    }
+    .nav3{
+        right: 16.6%;
+        left: 9.8%;
+        top: 686px;
+    }
+    h2, h3{  
+        font:72px Bebas Neue,sans-serif;
+        font-weight: 600;
+        margin: 0px 4px;
+    }
+    .about_text{
+        margin: 152px 0px;
+    }
+    .about_text2{
+        width: 477px;
+        font:20px Anonymous Pro,sans-serif;
+    }
+    .section1{
+        margin: 0px 9.8%;
+    }
+    .section11, .section12, .section13{
+        padding: 48px 0px;
+    }
+    .h4{  
+        font:36px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .h5{  
+        font:20px Anonymous Pro,sans-serif;
+    }
+    .bg1{
+        margin: 96px 0px;
+    }
+    .bg2 {
+        background: url(../img/bgg3.png) center center;
+        height: 281px;
+        width: 421px;
+    }
+    h4{
+        font:96px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    h5{  
+        font:24px Anonymous Pro,sans-serif;
+    }    
+    .bg2:hover h4 { 
+        font:112px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .section2{
+        margin: 8px 9.8%;
+    }
+    .section21, .section22{
+        padding: 40px 24px;
+        padding-right: 105px;
+    }
+    .section3{
+        margin: 0px 9.8%;
+        gap: 8px;
+        height: 304px;
+    }
+    .section31, .section32, .section33{
+        padding: 24px;
+    }
+    .h6{
+        font:56px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .h7{  
+        font:16px Anonymous Pro,sans-serif;
+    }
+    .section4{
+        margin: 120px 9.8%
+    }
+    img.rot {
+        width: 275px;
+    }
+    .buttonswe{
+        margin-top: 88px;
+        gap: 8px
+    }
+    .zagolovok3{
+        margin-top: 16px;
+        margin-left: 81px;
+    }
+    h6{
+        font: 4.69vw Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    header{
+        gap: 8px;
+    }
+    }
+
+
+@media (max-width: 834px) {
+    button.button1, button.button2{
+        width: 172px;
+    }
+    nav{
+        padding: 24px 6.7%;
+    }
+    .navbar{
+        width: 326px;
+    }
+    .navbar a{
+        font:16px Anonymous Pro,sans-serif;
+    }
+    .logo{
+        font:20px Anonymous Pro,sans-serif;
+        font-weight: 650;
+    }
+    .zagolovok1{
+        margin-top: 165px;
+        margin-left: 6.7%;
+    }
+    .zagolovok2{
+        margin-left: 14.1%
+    }
+    .nav3{
+        right: 6.7%;
+        left: 6.7%;
+        top: 83vh;
+    }
+    .about_text2{
+        width: 416px;
+    }
+    .section1{
+        margin: 0px 6.7%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section11, .section12, .section13{
+        padding: 24px 0px;
+    }
+    .section2{
+        margin: 8px 6.7%;
+    }
+    .section21, .section22{
+        padding: 40px 16px;
+        padding-right: 61px;
+    }
+    .section3{
+        margin: 0px 6.7%;
+        gap: 8px;
+        height: 248px;
+    }
+    .section31, .section32, .section33{
+        padding: 16px;
+    }
+    .h6{
+        font:40px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .h7{  
+        font:16px Anonymous Pro,sans-serif;
+    }
+    .section4{
+        margin: 120px 6.7%
+    }
+    img.rot {
+        width: 204px;
+    }
+    .buttonswe{
+        margin-top: 48px;
+        gap: 8px
+    }
+    .zagolovok3{
+        margin-top: 16px;
+        margin-left: 61px;
+    }
+    h6{
+        font:40px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+  }
+
+
+@media (max-width: 600px) {
+    button.button1, button.button2{
+        font:20px Anonymous Pro,sans-serif;
+        font-weight: 500;
+        width: 160px;
+        margin-top: 48px;
+        
+        
+    }
+    nav{
+        padding: 24px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        width: 336px;
+        padding-top: 16px;
+    }
+    .zagolovok1{
+        margin-top: 140px;
+        margin-left: 20px;
+    }
+    .zagolovok2{
+        margin-left: 44px;
+    }
+    .nav3{
+        right: 20px;
+        left: 20px;
+        flex-direction: column;
+        align-items: center;
+        top: 613px;
+    }
+    .navbar a:hover{
+    color: #25af5a;
+    text-decoration: none;
+    }
+    h2, h3{  
+        font:48px Bebas Neue,sans-serif;
+        font-weight: 600;
+        margin: 0px 2px;
+    }
+    .about_text{
+        margin: 96px 0px;
+    }
+    .about_text2{
+        width: 336px;
+        font:16px Anonymous Pro,sans-serif;
+    } 
+    .bg1{
+        margin: 104px 0px;
+    }
+    .bg2 {
+        background: url(../img/bgg5.png) center center;
+        height: 223px;
+        width: 336px;
+    }
+    h4{
+        font:56px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    h5{  
+        font:20px Anonymous Pro,sans-serif;
+    }    
+    .bg2:hover h4 { 
+        font:64px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }  
+    .section2{
+        margin: 16px 20px;
+    }
+    .section21, .section22{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: start; 
+        padding: 16px;
+        padding-right: 0px;
+        height: 124px;
+    }
+    .text1{
+        text-align: start;
+    }
+    .section3{
+        margin: 0px 20px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px;
+        height: 404px;
+    }
+    .section31, .section33{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:end; 
+        padding: 16px;
+    }
+     .section32{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:start; 
+        padding: 16px;
+    }
+    .text2{
+        text-align: end;
+    }
+    .h6{
+        font:36px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+    .h7{  
+        font:16px Anonymous Pro,sans-serif;
+    }
+    .section4{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between;  */
+        align-items: center;
+        margin: 96px 20px
+    }
+    img.rot {
+        width: 160px;
+    }
+    .buttonswe{
+        margin: 56px 0px;
+        margin-top: 48px;
+        gap: 16px
+    }
+    .zagolovok3{
+        margin-top: 16px;
+        margin-left: 32px;
+    }
+    h6{
+        font:40px Bebas Neue,sans-serif;
+        font-weight: 600;
+    }
+  }

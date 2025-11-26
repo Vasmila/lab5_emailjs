@@ -1,0 +1,202 @@
+.h10{
+    /* font:4.17vw Bebas Neue,sans-serif;; */
+    font:80px Bebas Neue,sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+    margin: 0px 0px;
+}
+.h11{
+    /* font:4.17vw Bebas Neue,sans-serif;; */
+    font:56px Anonymous Pro,sans-serif;
+    color:#ffffff;
+    margin: 0px 0px;
+}
+
+
+.anim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Anonymous Pro';
+    font-size:56px;
+    padding: 56px 0px;
+    text-align:center;
+    margin:192px auto;
+    color:#6354D7;
+    overflow:hidden;
+    animation:bg 5s linear infinite;
+    overflow-x:hidden;
+}
+
+.dropping-texts {
+    margin: 80px 0px;
+    margin-right: 240px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: -2px;
+}
+
+.dropping-texts > div {
+  font-size:0px;
+  opacity:0;
+  margin-left:-30px;
+  position:absolute;
+  font-weight:300;   
+  /* box-shadow: 0px 60px 25px -20px rgb(252, 252, 252); */
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  30% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  37% {
+    font-size:400px;
+    opacity:0;
+    margin-left:-1000px;
+    margin-top:-800px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes bg {
+  0% {background: #8F8DFF;}
+  3% {background: #459FCF;}
+  20% {background: #459FCF;}
+  23% {background: #BFCDFF;}
+  40% {background: #BFCDFF;}
+  43% {background: #F294CB;}
+  60% {background: #F294CB;}
+  63% {background: #8F8DFF;}
+  80% {background: #8F8DFF;}
+  83% {background: #8F8DFF;}
+  100% {background: #8F8DFF;}
+}
+
+@media (max-width: 1440px) {
+    .h10{
+      font:72px Bebas Neue,sans-serif;
+    }
+  }
+
+@media (max-width: 1194px) {
+    .anim {
+        margin:152px auto;
+    }
+    .h10{
+      font:56px Bebas Neue,sans-serif;
+    }
+  }
+
+@media (max-width: 834px) {
+    .anim {
+        font-size:40px;
+        padding: 56px 0px;
+        margin:96px auto;
+    }
+    .h10{
+        font:48px Bebas Neue,sans-serif;
+        font-weight: 600;
+}
+    .dropping-texts {
+        margin: 56px 0px;
+        margin-right: 150px;
+    }
+  }
+
+
+@media (max-width: 600px) {
+    .anim {
+        font-size:32px;
+        padding: 56px 0px;
+        margin:96px auto;
+    }
+    .h10{
+        font:48px Bebas Neue,sans-serif;
+        font-weight: 600;
+}
+    .dropping-texts {
+        margin: 40px 0px;
+        margin-right: 150px;
+    }
+  }

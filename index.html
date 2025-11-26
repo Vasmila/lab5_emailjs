@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Промо</title >
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles11.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/stylesmy.css"> 
+      <link rel="stylesheet" type="text/css" href="styles/stylesmy2.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .message {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .loading {
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Рядом.Делимся</a>
+      <ul class="navbar">
+        <li><a href="#we">О сервисе</a></li>
+        <li><a href="#functions">Функции</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav2">
+          <div class="zagolovok1"><h1>Лучший сервис</h1></div>
+          <div class="zagolovok2"><h1>для размещения объявлений!</h1></div>
+      </div>
+      <div class="nav3">
+          <h1>Экономь время, деньги и&nbsp;место в шкафу!</h1>
+          <button type="button" class="button1" onclick="location.href='https://www.figma.com/design/yj9j1cuLn8rxCWsauYXDWc/%D0%B2%D0%B5%D0%B1-6-%D1%81%D0%B5%D0%BC?node-id=0-1&t=AwpKUJ1cTdPrSDn2-1'">Установить</button>
+      </div>
+  </header>
+
+  <div id="background">
+    <div id="bg" class="intro"></div>
+    <!-- <div id="fg"></div> -->
+    </div>
+  </div>
+
+  <main>
+
+    <div class="berstr">
+        <div class="str1"><h2>Р</h2><h3>М</h3><h2>Я</h2><h3>С</h3><h2>Д</h2><h3>Я</h3><h2>О</h2><h3>Д</h3><h2>М</h2><h3>Е</h3>
+          <h2>Р</h2><h3>Л</h3><h2>Я</h2><h3>И</h3><h2>Д</h2><h3>М</h3><h2>О</h2><h3>С</h3><h2>М</h2><h3>Я</h3>
+          <h2>Р</h2><h3>Д</h3><h2>Я</h2><h3>Е</h3><h2>Д</h2><h3>Л</h3><h2>О</h2><h3>И</h3><h2>М</h2><h3>М</h3>
+          <h2>Р</h2><h3>С</h3><h2>Я</h2><h3>И</h3>
+          </div>
+          <div class="str2"><h2>Р</h2><h3>М</h3><h2>Я</h2><h3>С</h3><h2>Д</h2><h3>Я</h3><h2>О</h2><h3>Д</h3><h2>М</h2><h3>Е</h3>
+          <h2>Р</h2><h3>Л</h3><h2>Я</h2><h3>И</h3><h2>Д</h2><h3>М</h3><h2>О</h2><h3>С</h3><h2>М</h2><h3>Я</h3>
+          <h2>Р</h2><h3>Д</h3><h2>Я</h2><h3>Е</h3><h2>Д</h2><h3>Л</h3><h2>О</h2><h3>И</h3><h2>М</h2><h3>М</h3>
+          <h2>Р</h2><h3>С</h3><h2>Я</h2><h3>И</h3>
+          </div>
+    </div>
+
+    <p><a name="we"></a></p> 
+
+    <div class="about_text">
+      <div class="about_text2">Рядом.Делимся - это уникальный сервис для размещения объявлений в сообществах. С нами ты сможешь избавиться от ненужных вещей, получить то, что нужно тебе, а также подружится с соседями по дому!
+      </div>
+    </div>
+
+
+    <div class="section1">
+      <div class="section11"><div class="h5">более</div><div class="h4">10&nbsp;000</div><div class="h5">пользователей</div></div>
+      <div class="section12"><div class="h4">10</div><div class="h5">сделок в минуту</div></div>
+      <div class="section13"><div class="h5">более</div><div class="h4">200</div><div class="h5">сообществ</div></div>
+  </div>
+
+  <div class="bg1">
+    <div class="bg2">
+      <h4>12 065</h4>
+      <h5>объявлений на данный момент</h5>
+    </div>
+  </div>
+
+  <p><a name="functions"></a></p> 
+
+  <div class="section2">
+      <div class="section21"><div class="h6">ПОЛУЧАЙ</div><div class="text1"><div class="h7">Арендуй или покупай вещи<br>других пользователей</div></div>
+    </div>
+  </div>
+
+  <div class="section3">
+      <div class="section31"><div class="h6">ИЗБАВЛЯЙСЯ</div><div class="text2"><div class="h7">Продавай или сдавай<br>ненужые тебе вещи</div></div>
+    </div>
+      <div class="section32"><div class="h6">ЗАРАБАТЫВАЙ</div><div class="text1"><div class="h7">Продавай свои услуги<br>и покупай чужие</div></div>
+    </div>
+    <div class="section33"><div class="h6">ОБЩАЙСЯ</div><div class="text2"><div class="h7">Переписывайся с другими<br>пользователями и заводи друзей</div></div>
+    </div>
+  </div>
+
+  <div class="section2">
+      <div class="section22"><div class="h6">СОСЕДСТВУЙ</div><div class="text1"><div class="h7">Вступай в сообщества<br>соседей или создай свое</div></div>
+    </div>
+  </div>
+
+
+
+
+  <p><a name="contacts"></a></p> 
+  <div class="section4">
+    
+    <div>
+      <h6>Вступай в наше</h6>
+      <div class="zagolovok3"><h6>дружное сообщество!</h6></div>
+
+      <div class="buttonswe">
+        <button type="button" class="button1" onclick="location.href='#'">ВКонтакте</button>
+        <button type="button" class="button1" onclick="location.href='#'">Telegram</button>
+      </div>
+    </div>
+
+    <img class="rot" src="img/we1.png">
+    <!-- <img src="img/we1.png"> -->
+
+  </div>
+
+  <!-- <button type="button" class="button2" onclick="location.href='#'">Установить</button> -->
+
+  <div class="anim">
+    <div class="h10">сделай это</div>
+    <div class="dropping-texts">
+      <div class="h11">ПОКУПАЙ</div>
+      <div class="h11">АРЕНДУЙ</div>
+      <div class="h11">ПРОДАВАЙ</div>
+      <div class="h11">СДАВАЙ</div>
+    </div>
+
+    <button type="button" class="button2" onclick="location.href='https://www.figma.com/design/yj9j1cuLn8rxCWsauYXDWc/%D0%B2%D0%B5%D0%B1-6-%D1%81%D0%B5%D0%BC?node-id=0-1&t=AwpKUJ1cTdPrSDn2-1'">Установить</button>
+
+
+
+  </div>
+
+      <div class="container">
+        <h1>Форма обратной связи</h1>
+        
+        <div id="successMessage" class="message success">
+            Сообщение успешно отправлено!
+        </div>
+        
+        <div id="errorMessage" class="message error">
+            Произошла ошибка при отправке сообщения.
+        </div>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Тема:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Отправить сообщение</button>
+        </form>
+
+        <div id="loading" class="loading">
+            Отправка сообщения...
+        </div>
+    </div>
+
+    <!-- Подключаем EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script>
+        // Инициализация EmailJS
+        (function() {
+            emailjs.init("1hltZMWWreA6olGPG"); // Замените на ваш публичный ключ
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Скрываем предыдущие сообщения
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            // Показываем индикатор загрузки
+            submitBtn.disabled = true;
+            loading.style.display = 'block';
+            
+            // Собираем данные формы
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Отправляем email через EmailJS
+            emailjs.send('service_vn2e32q', 'template_tiap88n', formData)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Показываем сообщение об успехе
+                    successMessage.style.display = 'block';
+                    
+                    // Очищаем форму
+                    document.getElementById('contactForm').reset();
+                    
+                    // Прокручиваем к верху страницы
+                    window.scrollTo(0, 0);
+                })
+                .catch(function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Показываем сообщение об ошибке
+                    errorMessage.style.display = 'block';
+                    
+                    // Прокручиваем к верху страницы
+                    window.scrollTo(0, 0);
+                })
+                .finally(function() {
+                    // Скрываем индикатор загрузки
+                    submitBtn.disabled = false;
+                    loading.style.display = 'none';
+                });
+        });
+    </script>
+
+
+    
+  
+  </main>
+
+
+
+  <header>
+    <div class="container1"><div class="bukvi"><div class="buk">.</div></div></div>
+    <div class="container2"><div class="bukvi"><div class="buk">р</div></div></div>
+    <div class="container3"><div class="bukvi"><div class="buk">я</div></div></div>
+    <div class="container4"><div class="bukvi"><div class="buk">д</div></div></div>
+    <div class="container5"><div class="bukvi"><div class="buk">о</div></div></div>
+    <div class="container6"><div class="bukvi"><div class="buk">м</div></div></div>
+    <div class="container3"><div class="bukvi"><div class="buk">.</div></div></div>
+    <div class="container5"><div class="bukvi"><div class="buk">д</div></div></div>
+    <div class="container2"><div class="bukvi"><div class="buk">е</div></div></div>
+    <div class="container6"><div class="bukvi"><div class="buk">л</div></div></div>
+
+    <div class="container5"><div class="bukvi"><div class="buk">и</div></div></div>
+    <div class="container4"><div class="bukvi"><div class="buk">м</div></div></div>
+    <div class="container6"><div class="bukvi"><div class="buk">с</div></div></div>
+    <div class="container2"><div class="bukvi"><div class="buk">я</div></div></div>
+    <div class="container3"><div class="bukvi"><div class="buk">.</div></div></div>
+    <div class="container1"><div class="bukvi"><div class="buk">р</div></div></div>
+    <div class="container2"><div class="bukvi"><div class="buk">я</div></div></div>
+    <div class="container6"><div class="bukvi"><div class="buk">д</div></div></div>
+    <div class="container1"><div class="bukvi"><div class="buk">о</div></div></div>
+    <div class="container4"><div class="bukvi"><div class="buk">м</div></div></div>
+
+  </header>
+
+    
+    <script src='other_files/Script_1.js'></script>
+    <!-- <script src='other_files/Script_2.js'></script> -->
+
+</body>
+</html>

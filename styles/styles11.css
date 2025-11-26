@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    font-family: Anonymous Pro;
+}
+
+:root{
+    --my-blue1: #BFCDFF;
+    --my-blue2: #6354D7;
+    --my-biruz1: #459FCF;
+    --my-biruz2: #B5D8EA;
+    --my-pink1: #E444A2;
+    --my-pink1: #F294CB;
+    --my-violet: #8F8DFF;   
+}
+
+
+#background {
+    /* width: 100%;
+    height: 100vh;
+    background: url('../img/g1.png');
+    background-size: cover; */
+    /* min-height: 300px; */
+    /* background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; */
+    font-size: 10vw;
+    min-height: 100vh;
+    background: url(../img/g1.png) no-repeat bottom center / cover;
+}
+
+:root {--x: 0px; --y: 0px;}
+body {position: relative; margin: 0; padding: 0;}
+/* body {position: relative; overflow: hidden; margin: 0; padding: 0;} */
+section {width: 100%; height: 100vh;}
+
+#bg, #fg {
+    position: relative; top: 0; left: 0; right: 0; bottom: 0;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center; */
+    font-size: 10vw; 
+    /* text-transform: uppercase; user-select: none; */
+}
+
+#bg {
+    z-index: 2; 
+    min-height: 100vh;
+    clip-path: circle(5% at var(--x) var(--y));
+    -webkit-text-fill-color: transparent;
+    background-image: url(../img/g11.png);
+}
+
+#bg.intro {
+    clip-path: circle(100% at 50% 50%);
+    animation: circleIntro 1s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+
+@keyframes circleIntro {100% {clip-path: circle(10% at 50% 50%);}}
+/* 
+#fg {
+   min-height: 300px;
+    font-size: 1.5em;
+    background: url(../img/g1.png) no-repeat bottom center / cover;
+    z-index: 1;
+    z-index: 1;
+    background-image: url(../img/g1.png) ;
+} */
+@media (max-width: 1920px) {
+    #background {
+        background: url(../img/g1.png) no-repeat bottom center / cover;
+    }
+    #bg {
+        background-image: url(../img/g11.png);
+    }
+  }
+
+@media (max-width: 1440px) {
+    #background {
+        background: url(../img/g2.png) no-repeat bottom center / cover;
+    }
+    #bg {
+        background-image: url(../img/g12.png);
+    }
+  }
+@media (max-width: 1194px) {
+    #background {
+        background: url(../img/g3.png) no-repeat bottom center / cover;
+    }
+    #bg {
+        background-image: url(../img/g13.png);
+    }
+  }
+@media (max-width: 834px) {
+    #background {
+        background: url(../img/g4.png) no-repeat bottom center / cover;
+    }
+    #bg {
+        background-image: url(../img/g14.png);
+    }
+  }
+@media (max-width: 500px) {
+    #background {
+        background: url(../img/g5.png) no-repeat bottom center / cover;
+    }
+    #bg {
+        background-image: url(../img/g15.png);
+    }
+  }
+
+
